@@ -8,7 +8,7 @@ import (
 )
 
 type Member struct {
-	MemberID  string          `json:"member_id" gorm:"primaryKey"`
+	MemberID  string          `json:"member_id,omitempty" gorm:"primaryKey"`
 	Username  string          `json:"username" validate:"required"`
 	Gender    types.Gender    `json:"gender" validate:"required"`
 	SkinType  types.SkinType  `json:"skin_type" validate:"required"`
