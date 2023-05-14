@@ -10,5 +10,6 @@ func SetupRouter(e *echo.Echo) {
 	root := e.Group("api/v1")
 
 	controllers.AddMemberRoutes(root)
+	controllers.AddReviewRoutes(root)
 	controllers.AddLikeReviewRoutes(root)
 }
